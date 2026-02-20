@@ -1,0 +1,72 @@
+.custom-alert-overlay {
+    position: fixed;
+    inset: 0; //
+    background: rgba(16, 24, 40, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 99999;
+
+    animation: alertFadeIn 0.25s ease forwards;
+
+    .custom-alert {
+        background: #ffffff;
+        border-radius: var(--radius-md);
+        min-width: 320px;
+        max-width: 400px;
+        padding: 16px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+
+        box-shadow:
+            0px 20px 24px rgba(16, 24, 40, 0.08),
+            0px 8px 8px rgba(16, 24, 40, 0.03);
+
+        animation: alertScaleIn 0.25s ease forwards;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes alertFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes alertScaleIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

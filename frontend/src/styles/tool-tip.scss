@@ -1,0 +1,11 @@
+.delete-tooltip {
+    position: absolute;
+    background-color: var(--node-bg);
+    box-shadow: var(--shadow-sm);
+    color: var(--color-text);
+    border: 1px solid;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+}

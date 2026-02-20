@@ -1,0 +1,35 @@
+.select-wrapper {
+    width: 100%;
+
+    select {
+        width: 100%;
+        padding: 7px;
+
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--color-border);
+        background: #fff;
+        color: var(--color-text);
+
+        font-size: 13px;
+        outline: none;
+        cursor: pointer;
+
+        transition: var(--transition-fast);
+        box-shadow: var(--shadow-sm);
+
+        &:hover:not(:focus) {
+            border-color: var(--color-border-hover);
+        }
+
+        &:focus {
+            border-color: var(--color-border-focus);
+            box-shadow: var(--shadow-focus), var(--shadow-sm);
+        }
+
+        &:disabled {
+            background: var(--color-disabled-bg);
+            color: var(--color-placeholder);
+            cursor: not-allowed;
+        }
+    }
+}
