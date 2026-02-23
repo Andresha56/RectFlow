@@ -18,7 +18,7 @@ class Pipeline(BaseModel):
 
 app = FastAPI()
 origins = [
-    "https://rect-flow-hwje9hyb1-andreshas-projects.vercel.app/",
+    "rect-flow.vercel.app/",
 ]
 app.add_middleware(
     CORSMiddleware,
