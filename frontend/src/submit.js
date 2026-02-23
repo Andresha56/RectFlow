@@ -19,7 +19,7 @@ export const SubmitButton = ({ className }) => {
         try {
             setIsError(false);
             const response = await fetch(
-                "http://localhost:8000/pipelines/parse",
+                " https://rectflow.onrender.com/pipelines/parse",
                 {
                     method: "POST",
                     headers: {
