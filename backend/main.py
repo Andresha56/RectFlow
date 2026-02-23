@@ -62,3 +62,4 @@ def parse_pipeline(pipeline: Pipeline):
         "num_edges": num_edges,
         "is_dag": dag
     }
+ 
